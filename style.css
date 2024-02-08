@@ -1,0 +1,354 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caja {
+    width: 940px;
+    /* ¿Por qué 940 pixeles? Porque comúnmente, es muy común que las pantallas tengan 1280 pixeles de formato, esto no es el 100% de las pantallas, pero gran mayoría de las pantas tienen ese formato. Entonces, si le estoy diciendo: "ocúpame 940 pixeles de esos 1280" le estoy diciendo "ocúpame el 70% aproximadamente de ese espacio". */
+    position: relative;
+    /* para colocar el la position: realtiva; a la posicion absoluta dentro el nav*/
+    margin: 0 auto;
+    /* se deja en auto para que el navegador lo organize con respecto a tamaño de la pagina */
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+    /* top, right, bottom,left */
+}
+
+nav a {
+    text-transform: uppercase;
+    /* texto en mayuscula */
+    color: #000000;
+    /* color del texto */
+    font-weight: bold;
+    /* darle negilla al texto */
+    font-size: 22px;
+    /* el tamaño de la fuente */
+    text-decoration: none;
+    /* quitar el subrayado o toda decoracion del texto */
+}
+
+nav a:hover {
+    /* dos etiquecas que va hacer capturadas por hover movimiento del mouse
+    la sintasix */
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.productos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+
+}
+
+.productos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    /* que cada elemento me ocupe el 30% del espacio, tengo tres elementos, estoy sumando un 90% de nuestro espacio disponible, y el resto se va a distribuir entre los espacios en cada uno de los elementos.  */
+    vertical-align: top;
+    /* background-color: #CCCCCC; */
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    /* tamaño de la caja el borde que cada uno de los items sera el limite del espaico que sera definido, por lo cual los 20px del padding no va sobrepasr el 30% de width establecido */
+    border: 2px solid #000000;
+    /* manera simplificada para definir el borde - Orden: width, style, color */
+    /*     
+    border-color: #000000;
+    border-width: 2px;
+    border-style: solid; */
+    /*
+    para poder  realizar un borde diferente a cada arista
+    border-top-right-radius: 10px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 20px; 
+    border-radius: 10px 25px 30px 20px; -> de manera reducida  
+    */
+    border-radius: 10px;
+    /* un solo dato se aplica a todos las aristas */
+}
+
+.productos li:hover {
+    border-color: #c78c19;
+}
+
+.productos li:active {
+    border-color: #088c19;
+}
+
+.productos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2 {
+    font-size: 34px;
+}
+
+.productoDescripcion {
+    font-size: 18px;
+}
+
+.productoPrecio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    /* vincular una imagen dentro de CSS usando background, al usar el background esta realiza que la textura ocupe todo el espacio dentro de la etiqueta*/
+    padding: 40px;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+
+/* elementos para la pagina de contacto */
+
+.main-contactos {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label,
+form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+/* Jerarquia en css 
+   exite una jerarquia y el orden en que se comporta el CSS con estos marcadores
+   1.iline en html -> mayor prioridad
+   2.ID 100 -> #
+   3.Class 10 -> .
+   4.Etiquetas 1 -> nameEtiqueta
+   realizanzo las configuraciones inline en html por medio del atributo style y definiendo el comportamiento
+   
+   Ejemplo:
+   - form p = 1+1 = 2 prioriza por solo colocar p
+   - .test = 10 gana prioridad
+   - p.test = 11
+   - #test = 100 gana prioridad
+   - <p style = "color: red;"></p> -> es la mayor prioridad
+   p.test{
+    color: aqua;
+}
+form p{
+    
+    color:blue;
+}
+
+p{
+    color:red;
+}
+
+#test{
+    color:cyan;
+}
+
+*/
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: darkgreen;
+    transform: scale(1.2);
+    /* transform: scale(1.2),rotate(70deg); los parametros de rotate son grados para pder ejecutar dos hay que establecerlas en la misma liena, sino descarta la otra */
+}
+
+table {
+    margin: 40px 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td,
+th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+    text-align: center;
+}
+
+/* Aquí inicia el CSS para el home 
+    CSS estilos aplicados en cascada
+*/
+
+.banner {
+    width: 100%;
+}
+
+.principal {
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    /* lo que hace el clear es limpiar cualquier configuración que venga a la izquierda despues del titulo que la limpie */
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    /*Mover la imagen */
+    margin: 0 20px 20px 0;
+    /* superior derecha inferior izquierda siempre en sentido horario */
+    border-radius: 8px;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#fefefe, #888888);
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    /* si solo se colocan dos valores el primero hace refeencia arriba y abajo, y el segundo izquierda derecha, al colocar solo uno este hace referencia a todos los espacios, y con los 3 o 4 hace referencia a acada lado  */
+    text-align: center;
+}
+
+.mapa-contenido {
+    width: 940px;
+    margin: 0 auto;
+
+}
+
+.diferenciales {
+    padding: 3em 0;
+    background: #888888;
+}
+
+.contenido-diferenciales {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales {
+    width: 40%;
+    /* 40% de los 640px definicdos dentro del div */
+    display: inline-block;
+    vertical-align: top;
+    /* Se usa para aliniar el texto de manera vertical*/
+}
+
+.items {
+    line-height: 1.5;
+}
+
+.items:first-child {
+    font-weight: bold;
+}
+
+.items:before {
+    content: "❉";
+    padding: 5px;
+}
+
+.imagen-diferenciales {
+    width: 60%;
+    transition: 400ms;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px 15px black;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+}
+
+.imagen-diferenciales:hover{
+    opacity: 0.7;
+
+}
+
+.video {
+    /* centrando el div del video */
+    width: 560px;
+    margin: 2em auto;
+}
+
+@media screen and (max-width:480px) {
+    /* las medias query permite trabajar conn exepciones, dada una condicion aplicar una diferente
+    si encuentras una pantalla con un ancho maximo de hasta 480px realiza esto*/
+   h1{
+    text-align: center;
+   }
+
+   nav{
+    position: static;
+   }
+   
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+    width: auto;
+   }
+
+   .lista-diferenciales,.imagen-diferenciales{
+    width: 100%;
+    margin: 0 0 2em 0;
+   }
+}

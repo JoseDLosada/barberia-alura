@@ -1,0 +1,67 @@
+/* Por bunea practica es recomendable mantener la misma estructura en el HTML y el CSS */
+.tituloPrincipal{
+    padding-left: 30px;
+    
+}
+
+#banner{
+    width: 100%;
+}
+
+.principal{
+    background: #CCCCCC;
+    padding: 20px; /* espaciemieto interno de los elementos */
+}
+
+.tituloCentralizado{
+    text-align: center;
+}
+
+p{ /* selectores de CSS */
+    text-align: center;
+}
+
+em strong{ 
+    /* comibnaicon de seleccores de etiquetas HMTL -> referencia una etiqueta child por medio del father father em y child strong, estan anidadas*/
+    color: red;
+}
+
+#mision{ 
+    /* forma de usar el selector por medio del id que haya en html */
+    font-size: 20px;
+}
+
+.diferenciales{
+    background: #FFFFFF;
+    padding: 30px;
+}
+
+.items{
+    /* por medio del .class podemos ingregar a las etiquetas por meido de las clases */
+    font-style: italic;
+}
+
+ul{
+    display: inline-block; /*Que ocupe solo su espacio del contenido y que los espaciamientos se puedan ajustar */
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+    /* se puede trabajar en pixeles o en porcentaje de trabajo */
+
+
+}
+
+.imagenDiferencial{
+    width: 50%;
+}
+
+.centrandoDiv{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* 
+    <div class = "centrandoDiv">
+        <p>Centrando el div</p>
+    </div> */
+}

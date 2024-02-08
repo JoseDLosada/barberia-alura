@@ -1,0 +1,109 @@
+<!DOCTYPE html> <!-- informa al navegador que se esta trabajando con HTML:5 -->
+
+<html lang="es"> <!-- es la etiqueta que contiene todo el contenido HTML, informa que se esta mandando HTML apartir de aqui, con el lang establecemos el idioma de la pagina-->
+<!-- etiquetas de estructuracion <head> <body> -->
+    <head>
+        <!-- en el head se colocan todas las etiquetas que informan -->
+        <meta charset="UTF-8"> <!-- establecer el diccionario de palabras por nedio del charset dentro de la tag informativa meta -->
+        <meta name="viewport" content="width= device-width">
+        <!-- se usa para la etiqueta meta con los etributos "name="viewport" content="width= device-width"" para relizar la configuracion de responsive -->
+        <title>Home - Barbería Alura</title> <!-- con esta tag le damos el titulo a la pestaña -->
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    </head>   
+
+    <body>
+        <!-- en el body se colocan todas las etiquetas de contenido -->
+
+        <header>
+            <!-- desde HTML5 el header es una etique que hace referencia a la encabezado -->
+            <div class="caja">
+                <!-- para poder modificar el menu y el logo haciendo uso del <div> -->
+                <h1>
+                    <img src="imagenes/logo.png"> 
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <!-- Enlazando con la etiqueta <a></a> files dentro del ptoyecto -->
+                        <li><a href="https://www.google.com">Pagina Externa</a></li> 
+                        <!-- Nevagacion para paginas externas haciendo uso de la etiqueca <a>  -->
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+
+        <main>
+            <img class="banner" src="banner/banner.jpg" alt="Imagen del banner">  <!-- referencia al archivo dentro de banner -->
+
+            <section class = "principal">
+                <h2 class="titulo-principal">Sobre la Barbería Alura</h2>
+                <img class="utensilios" src="imagenes/utensilios[1].jpg" alt="Utensilios de un Barbero">
+
+                <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente.</p>
+
+                <p id="mision">
+                    <!-- por medio del style definimos un estilo CSS, se llamas en cascada porque aplica para todas las eticas dentro de la etiqueta padre -->
+                    <em> <!-- enfasis del italico  -->
+                        Nuestra misión es: 
+                        <strong>
+                            "Proporcionar autoestima y calidad de vida a nuestros clientes"
+                        </strong>.
+                    </em>
+                </p>
+
+                <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p>
+
+            </section>
+            <section class="mapa">
+                <h3 class="titulo-principal">Nuestra Ubicación</h3>
+                <p>Nuestro establecimiento está ubicado en el corazón de la ciudad</p>
+                <div class="mapa-contenido">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2319.420845424205!2d-76.60343972342115!3d2.439870492993999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e300305bc631871%3A0xeff9e7336c0a4255!2sErmita%20de%20Jes%C3%BAs%20Nazareno!5e0!3m2!1ses-419!2sco!4v1706637097511!5m2!1ses-419!2sco" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!-- iframe es una etiqueta para crear tipo ventanas espacios areas en las cuales podemos colocar diferentes contenidos, cualquier contenido multimedia, por medio del atributo src vinculamos el contenido -->
+                </div>
+               
+            </section>
+
+            <section class = "diferenciales">
+                <h3 class="titulo-principal">Diferenciales</h3>
+                <div class="contenido-diferenciales">
+                    <ul class="lista-diferenciales">
+                        <!-- lista no ordenada <ul> es un etiqueta de bloque
+                        lista ordenada <ol>
+                        Cada item de la lista debe estar dentro de un etiqueta <li> -->
+                        <li class="items">Atención Personalizada de los Clientes.</li>
+                        <li class="items">Espacio Diferenciado.</li>
+                        <li class="items">Localización.</li>
+                        <li class="items">Profesionales Calificados.</li>
+                        <li class="items">Puntualidad.</li>
+                        <li class="items">Limpieza.</li>
+
+                    </ul><img src="diferenciales/diferenciales.jpg" class="imagen-diferenciales">
+                    <!-- El inline-block toma en cuenta la union de las etiquetas por esta razón se une el ul y la img -->
+                </div>
+                <div class="video">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY?si=70TXMxLmXF71mSDV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            
+
+        </main>
+
+      
+        <footer>
+            <!-- etiquera para el pie de pagina -->
+            <img src="imagenes/logo-blanco.png" alt="">
+            <p class="copyright">&copy Copyrigth Barberia Alura - 2024</p>
+        </footer>
+
+    </body> 
+    
+</html>
