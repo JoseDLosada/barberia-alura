@@ -34,3 +34,4 @@ rgb()
 
 # Formulario mas completo
 
+CHANGE USING NANO
